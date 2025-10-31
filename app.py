@@ -22,14 +22,14 @@ UUID = os.environ.get('UUID', '0913d47d-931c-449a-a8a2-3bef938032a0')  # UUID,�
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'agent.alpha.us.kg:80')      # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')          # v1哪吒请留空, v0哪吒的agent通信端口,自动匹配tls
 NEZHA_KEY = os.environ.get('NEZHA_KEY', 'gCNZBwoZ9WigfrzOzvgtNySHOfN78DPi')            # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')        # Argo固定隧道域名,留空即使用临时隧道
-ARGO_AUTH = os.environ.get('ARGO_AUTH', '')            # Argo固定隧道密钥,留空即使用临时隧道
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'streamlit.4.4.8.b.0.d.0.0.1.0.a.2.ip6.arpa')        # Argo固定隧道域名,留空即使用临时隧道
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiYTBjN2ExMTEwZjIwZTgxMzMwYTAxN2VjOGQ5MjNmYzQiLCJ0IjoiNGVkYjFiNmItNDkzZC00ZmFhLWI1M2ItYTYzOGVmZDgwMDIzIiwicyI6Ik1qTXpOek5pTjJVdFl6a3pZaTAwTXpreUxXRXlZbUV0TkdObVlqWTJNRE5qWmpsaSJ9')            # Argo固定隧道密钥,留空即使用临时隧道
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))   # Argo端口,使用固定隧道token需在cloudflare后台设置端口和这里一致
 CFIP = os.environ.get('CFIP', 'www.visa.com.tw')       # 优选ip或优选域名
 CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选ip或优选域名对应端口
 NAME = os.environ.get('NAME', 'Vls')                   # 节点名称
-CHAT_ID = os.environ.get('CHAT_ID', '')                # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '')            # Telegram bot_token
+CHAT_ID = os.environ.get('CHAT_ID', '7561949607')                # Telegram chat_id,推送节点到tg,两个变量同时填写才会推送
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '7069903272:AAEhfkTBX2Y-n3r8BMcYGHGgyue7rkxAAko')            # Telegram bot_token
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000) # 订阅端口，如无法订阅，请手动修改为分配的端口
 
 # Create running folder
